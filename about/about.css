@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background: black;
+    background: rgb(34, 15, 37);
     color: #f4f4f4;
     text-align: center;
     display: flex;
@@ -75,7 +75,7 @@ nav ul li a {
 }
 
 #meet-our-team {
-    background-color: #ebc58dee;
+    background-color: #f2dbb8ee;
     padding: 50px;
     text-align: center;
 }
