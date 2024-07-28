@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaferBoda</title>
+    <title>Saferride</title>
     <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
@@ -11,9 +11,12 @@
         <nav aria-label="Main Navigation">
             <div class="logo-container">
                 <img src="../image/boda.webp" alt="SaferBoda Logo" class="logo-image">
-                <div class="logo">INSTARIDE</div>
+                <div class="logo">Saferride</div>
             </div>
-            <ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="menu-icon">&#9776;</span>
+            </button>
+            <ul class="nav-links">
                 <li><a href="../homepage/homepage.html">Home</a></li>
                 <li><a href="../about/about.html">About</a></li>
                 <li><a href="../features/services.html">Services</a></li>
@@ -29,13 +32,12 @@
                 <div class="slide fade">
                     <img src="../image/slide1.jpg" alt="Image 2">
                 </div>
-               
                 <div class="slide fade">
-                    <img src="../image/back.jpg" alt="Image 4">
+                    <img src="../image/slide2.png" alt="Image 4">
                 </div>
             </div>
             <div class="slideshow-overlay">
-                <h2>Welcome to InstaRide</h2>
+                <h2>Welcome to SaferBoda</h2>
                 <button onclick="Services()">BOOK NOW</button>
             </div>
         </div>
@@ -43,6 +45,8 @@
 
     <section id="about">
         <div class="about-container">
+            <h2>About Us</h2>
+            <h1>Our advanced safety features and customer-focused approach ensure peace of mind for every ride.</h1>
             <div class="about-card">
                 <img src="../image/scanner.jpg" alt="Enhanced Safety Features">
                 <h3>Enhanced Safety Features</h3>
@@ -65,11 +69,11 @@
     </section>
 
     <section id="safety-features">
-        <div class="safety-features-container">
+        <div class="section-container">
             <h2>Advanced Safety Features</h2>
             <p>Ride confidently knowing that our app is equipped with advanced safety features to keep you and your loved ones protected at all times.</p>
-            <div class="safety-feature">
-                <img src="../image/real-time-connectivity.jpg" alt="Real-time Connectivity">
+            <div class="card">
+                <img src="../image/slide5.jpg" alt="Real-time Connectivity">
                 <div class="feature-description">
                     <h3>Real-time Connectivity</h3>
                     <p>Stay connected with family and emergency services in real-time, providing peace of mind during every ride.</p>
@@ -79,20 +83,20 @@
     </section>
 
     <section id="location-sharing">
-        <div class="location-sharing-container">
-            <div class="location-feature">
+        <div class="section-container">
+            <div class="card">
                 <div class="feature-description">
                     <h3>Location Sharing</h3>
                     <p>Easily share ride information with family members, allowing them to track your journey and know your exact location at any time.</p>
                 </div>
-                <img src="../images/location.jpg" alt="Location Sharing">
+                <img src='../image/locationtrack.jpg' alt="Location Sharing">
             </div>
         </div>
     </section>
 
     <section id="emergency-alerts">
-        <div class="emergency-alerts-container">
-            <div class="emergency-feature">
+        <div class="section-container">
+            <div class="card">
                 <img src="../image/panic.png" alt="Quick Emergency Alerts">
                 <div class="feature-description">
                     <h3>Quick Emergency Alerts</h3>
@@ -103,17 +107,17 @@
     </section>
 
     <section id="customer-testimonials">
-        <div class="testimonials-container">
+        <div class="section-container">
             <h2>Customer Testimonials</h2>
             <p>See what our satisfied customers have to say about their experience with our app and the peace of mind it has provided them.</p>
-            <div class="testimonial">
+            <div class="card">
                 <img src="../image/feedback.jpg" alt="Peace of Mind">
                 <div class="testimonial-description">
                     <h3>Peace of Mind</h3>
                     <p>InstaRide has given me peace of mind during my travels, especially when I'm out late at night. The safety features are truly invaluable.</p>
                 </div>
             </div>
-            <div class="testimonial">
+            <div class="card">
                 <img src="../image/safety.jpg" alt="Reliable Safety">
                 <div class="testimonial-description">
                     <h3>Reliable Safety</h3>
@@ -124,7 +128,7 @@
     </section>
 
     <section id="contact-us">
-        <div class="contact-container">
+        <div class="section-container">
             <h2>Contact Us</h2>
             <p>Have questions or feedback? We'd love to hear from you. Get in touch with us today.</p>
             <form class="contact-form">
@@ -139,15 +143,15 @@
     <footer>
         <div class="footer-container">
             <div class="footer-section">
-                <h3>About InstaRide</h3>
-                <p>InstaRide is dedicated to providing safe and reliable rides to our customers. Our advanced safety features and customer-focused approach ensure peace of mind for every ride.</p>
+                <h3>About SaferBoda</h3>
+                <p>SaferBoda is dedicated to providing safe and reliable rides to our customers. Our advanced safety features and customer-focused approach ensure peace of mind for every ride.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="../homepage/homepage.html">Home</a></li>
                     <li><a href="../about/about.html">About</a></li>
-                    <li><a href="../featurs/services.html">Services</a></li>
+                    <li><a href="../features/services.html">Services</a></li>
                     <li><a href="../contact us/contact.html">Contact</a></li>
                     <li><a href="../register/register.html">Register</a></li>
                 </ul>
@@ -163,7 +167,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 InstaRide. All rights reserved.</p>
+            <p>&copy; 2024 SaferBoda. All rights reserved.</p>
         </div>
     </footer>
 
