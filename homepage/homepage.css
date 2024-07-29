@@ -160,6 +160,13 @@ section {
     text-align: center;
 }
 
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 .about-container h2,
 .safety-features-container h2,
 .testimonials-container h2,
@@ -180,16 +187,18 @@ section {
 .location-feature,
 .emergency-feature,
 .testimonial {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 250px;
-    max-width: 30%;
+    min-width: 0;
+    flex-basis: calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
 }
 
 .about-card img,
@@ -199,6 +208,8 @@ section {
 .testimonial img {
     width: 100%;
     height: auto;
+    max-height: 200px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -299,4 +310,82 @@ footer {
     padding: 10px;
     color: #ccc;
     font-size: 14px;
+}
+/* General Styles */
+
+.section-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Testimonial Slideshow Styles */
+.testimonial-slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.testimonial-slide {
+    display: none;
+    text-align: center;
+}
+
+.safety-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature-description {
+    margin-top: 15px;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Dots */
+.navigation-dots {
+    text-align: center;
+    padding: 15px;
+    background: #f1f1f1;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
 }

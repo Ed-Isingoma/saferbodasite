@@ -17,7 +17,7 @@ main {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: #200f1e;
+  background-color: #333;
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -170,7 +170,7 @@ label {
 }
 
 .sign-btn:hover {
-  background-color:  #ecac4bee;
+  background-color:  #f2dbb8ee;
 }
 
 .text {

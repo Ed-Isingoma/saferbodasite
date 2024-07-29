@@ -37,8 +37,8 @@
                 </div>
             </div>
             <div class="slideshow-overlay">
-                <h2>Welcome to SaferBoda</h2>
-                <button onclick="Services()">BOOK NOW</button>
+                <h2>Welcome to Saferride</h2>
+                <button onclick="Services()">DOWNLOAD APP</button>
             </div>
         </div>
     </header>
@@ -67,7 +67,6 @@
             </div>
         </div>
     </section>
-
     <section id="safety-features">
         <div class="section-container">
             <h2>Advanced Safety Features</h2>
@@ -81,7 +80,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="location-sharing">
         <div class="section-container">
             <div class="card">
@@ -93,7 +92,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="emergency-alerts">
         <div class="section-container">
             <div class="card">
@@ -105,27 +104,46 @@
             </div>
         </div>
     </section>
-
     <section id="customer-testimonials">
         <div class="section-container">
             <h2>Customer Testimonials</h2>
             <p>See what our satisfied customers have to say about their experience with our app and the peace of mind it has provided them.</p>
-            <div class="card">
-                <img src="../image/feedback.jpg" alt="Peace of Mind">
-                <div class="testimonial-description">
-                    <h3>Peace of Mind</h3>
-                    <p>InstaRide has given me peace of mind during my travels, especially when I'm out late at night. The safety features are truly invaluable.</p>
+            
+            <div class="slideshow-container">
+                <div class="testiminal-slide">
+                    <div class="safety-feature">
+                        <img src="../image/feedback.jpg" alt="Peace of Mind">
+                        <div class="feature-description">
+                            <h3>Peace of Mind</h3>
+                            <p>InstaRide has given me peace of mind during my travels, especially when I'm out late at night. The safety features are truly invaluable.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../image/safety.jpg" alt="Reliable Safety">
-                <div class="testimonial-description">
-                    <h3>Reliable Safety</h3>
-                    <p>I feel much safer using SaferBoda, knowing that my loved ones can track my ride and that I have the Panic Button feature at my fingertips.</p>
+                <div class="testiminal-slide">
+                    <div class="safety-feature">
+                        <img src="../image/safety.jpg" alt="Reliable Safety">
+                        <div class="feature-description">
+                            <h3>Reliable Safety</h3>
+                            <p>I feel much safer using SaferBoda, knowing that my loved ones can track my ride and that I have the Panic Button feature at my fingertips.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+    
+                <!-- Add navigation arrows -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                 <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
-    </section>
+        
+        <div class="navigation-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+</section>
+
+   
+    
+    
 
     <section id="contact-us">
         <div class="section-container">
