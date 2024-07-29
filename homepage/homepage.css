@@ -27,12 +27,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-    padding: 20px 50px;
-    background-color: rgb(35, 16, 35);
-=======
     padding: 15px 50px;
->>>>>>> 0a858c113b857bed3c832f8d52f54969595845b8
 }
 
 .logo-container {
