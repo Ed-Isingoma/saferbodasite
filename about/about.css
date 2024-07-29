@@ -17,21 +17,11 @@ body {
     background: #f4f4f4;
 }
 
-<<<<<<< HEAD
-header { 
-    background: rgb(34, 15, 37);
-    color: #f4f4f4;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-=======
 header {
     background: #333;
     color: #fff;
     width: 100%;
     position: relative;
->>>>>>> 0a858c113b857bed3c832f8d52f54969595845b8
 }
 
 header nav {
