@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Satoshi', sans-serif;
 }
 
 body {
@@ -27,12 +27,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-    padding: 20px 50px;
-    background-color: rgb(35, 16, 35);
-=======
     padding: 15px 50px;
->>>>>>> 0a858c113b857bed3c832f8d52f54969595845b8
 }
 
 .logo-container {
@@ -100,6 +95,21 @@ ul li a {
     position: relative;
 }
 
+.readMore {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .readMore:hover {
+    background-color: #2980b9;
+  }  
+
 .slideshow-container {
     width: 100%;
     height: 100%;
@@ -149,7 +159,7 @@ ul li a {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 20px;
     width: 100%;
 }
 
@@ -163,6 +173,41 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+}
+
+.card {
+    height: 200px;
+}
+
+.feature-description h3, .section-container > h2 {
+    text-align: center;
+}
+
+#customer-testimonials .slideshow-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.feature-description > * {
+    padding: 10px;
+}
+
+.card > * {
+    width: 48%;
+    vertical-align: bottom;
+    background-color: #3498db;
+    border-radius: 5px;
+    display: inline-block;
+    height: 100%;
+}
+
+.about-cards {
+    display: grid;
+    padding: 10px;
+    background-color: #ddd;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .about-container h2,
@@ -180,21 +225,21 @@ section {
     gap: 20px;
 }
 
-.about-card,
-.safety-feature,
 .location-feature,
 .emergency-feature,
 .testimonial {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 250px;
-    max-width: 30%;
+    min-width: 0;
+    flex-basis: calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
 }
 
 .about-card img,
@@ -204,11 +249,12 @@ section {
 .testimonial img {
     width: 100%;
     height: auto;
+    max-height: 200px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.feature-description,
 .testimonial-description {
     text-align: left;
 }
@@ -304,4 +350,88 @@ footer {
     padding: 10px;
     color: #ccc;
     font-size: 14px;
+}
+/* General Styles */
+
+.section-container {
+    width: 80%;
+    margin: auto;
+}
+
+.section-container > * {
+    margin: 10px 0;
+}
+
+.testimonial-slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.testimonial-slide {
+    display: none;
+    text-align: center;
+}
+
+.safety-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+/* Navigation Arrows */
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+} */
+
+/* Dots */
+/* .navigation-dots {
+    text-align: center;
+    padding: 15px;
+    background: #f1f1f1;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+} */
+
+@media (max-width: 480px) {
+    .about-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
