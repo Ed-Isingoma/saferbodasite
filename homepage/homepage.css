@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
 * {
@@ -184,9 +183,11 @@ section {
     text-align: center;
 }
 
-/* #customer-testimonials .testimonal-slide {
-
-} */
+#customer-testimonials .slideshow-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
 
 .feature-description > * {
     padding: 10px;
@@ -203,6 +204,8 @@ section {
 
 .about-cards {
     display: grid;
+    padding: 10px;
+    background-color: #ddd;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
@@ -222,7 +225,6 @@ section {
     gap: 20px;
 }
 
-.safety-feature,
 .location-feature,
 .emergency-feature,
 .testimonial {
@@ -359,7 +361,7 @@ footer {
 .section-container > * {
     margin: 10px 0;
 }
-/* Testimonial Slideshow Styles */
+
 .testimonial-slideshow-container {
     position: relative;
     max-width: 100%;
@@ -377,10 +379,12 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 5px;
+    background-color: #ddd;
 }
 
 /* Navigation Arrows */
-.prev, .next {
+/* .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -402,10 +406,10 @@ footer {
 
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-}
+} */
 
 /* Dots */
-.navigation-dots {
+/* .navigation-dots {
     text-align: center;
     padding: 15px;
     background: #f1f1f1;
@@ -424,7 +428,7 @@ footer {
 
 .active, .dot:hover {
     background-color: #717171;
-}
+} */
 
 @media (max-width: 480px) {
     .about-cards {
