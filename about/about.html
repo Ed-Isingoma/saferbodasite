@@ -13,8 +13,9 @@
                 <img src="../image/boda.webp" alt="Instaride Logo" class="logo-image">
                 <div class="logo">Saferride</div>
             </div>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <ul id="nav-menu">
+           
+            <div class="menu-icon" id="menu-icon">☰</div>
+                <ul id="nav-menu">
                 <li><a href="../homepage/homepage.html">Home</a></li>
                 <li><a href="../about/about.html">About</a></li>
                 <li><a href="../features/services.html">Services</a></li>
@@ -50,7 +51,7 @@
                     <p>Joy oversees the financial operations of Saferride, ensuring sustainable growth and financial stability.</p>
                 </div>
                 <div class="team-member">
-                    <img src="../image/origis.png" alt="David Wilson - CMO">
+                    <img src="../image/tina.jpg" alt="David Wilson - CMO">
                     <h3>Edgar Isingoma </h3>
                     <p>Edgar is responsible for the marketing strategies, working to increase brand awareness and customer engagement.</p>
                 </div>
@@ -115,10 +116,11 @@
     </footer>
 
     <script>
-        function toggleMenu() {
-            const navMenu = document.getElementById('nav-menu');
-            navMenu.classList.toggle('show');
-        }
+          document.getElementById("menu-icon").addEventListener("click", function() {
+            this.classList.toggle("active");
+            document.getElementById("nav-menu").classList.toggle("active");
+        });
+        
     </script>
 </body>
 </html>
